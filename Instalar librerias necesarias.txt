@@ -1,0 +1,4 @@
+Ejecutar Anaconda Propmpt con privilegios administrativos (click derecho) y ejecutar los siguientes comandos
+
+conda install -y -c anaconda portaudio
+pip install --ignore-installed msgpack numpy pyaudio wave librosa scipy matplotlib opencv-python
