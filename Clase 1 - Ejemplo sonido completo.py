@@ -1,6 +1,4 @@
-﻿# -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 25 13:14:28 2018
+
 
 @author: Fernando Pamplona
 """
