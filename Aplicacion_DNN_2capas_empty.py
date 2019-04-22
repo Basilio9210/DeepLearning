@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 """
 Este código esta basado en el curso de DeepLearning del profesor Andrew Ng
