@@ -1,8 +1,4 @@
-"""
-Created on Sat Aug 25 13:14:28 2018
 
-@author: Fernando Pamplona
-"""
 import numpy as np # para operar vectores y matrices
 import wave        # Libreria para leer y esctribir archivos WAV
 import struct      # Libreria que estructura información dividida
