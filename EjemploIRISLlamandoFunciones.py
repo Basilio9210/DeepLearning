@@ -1,10 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Apr 27 08:37:28 2019
 
-
-@author: Karol Ortega
-"""
 
 import numpy as np
 import tensorflow as tf
