@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 24 15:26:20 2018
 
-@author: 
-"""
 
 from random import shuffle
 import glob
