@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Mar 30 08:41:50 2019
 
-@author: itm
-"""
 
 #from PIL import Image
 import numpy as np
