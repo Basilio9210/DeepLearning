@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 24 16:17:25 2018
 
-@author: itm
-"""
 
 import tables
 import numpy as np
