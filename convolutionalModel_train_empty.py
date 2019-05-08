@@ -1,10 +1,4 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jun 11 12:50:13 2018
 
-@author: madcas
-"""
 
 import math
 import numpy as np
