@@ -66,3 +66,30 @@ init_state = tf.placeholder(tf.float32, [batch_size, vocab_size])
 # --- Weights, Bias initialization
 W = tf.Variable(np.random.rand( _ , vocab_size), dtype=tf.float32)
 b = tf.Variable(np.zeros((1, _ )), dtype=tf.float32)
+
+
+def model(input_placeholder, weights, biases):
+    
+    # reshape to [1, n_input]
+    input_placeholder = tf.reshape(input_placeholder, [-1, _ ])
+    
+    # Generate a n_input-element sequence of inputs
+    # (eg. [had] [a] [general] -> [20] [6] [33])
+    input_placeholder = tf.split(input_placeholder, n_input,1)
+    
+    # 1-layer LSTM with n_hidden units but with lower accuracy.
+    # Average Accuracy= 90.60% 50k iter
+    cell = rnn_cell.LSTMCell (n_hidden, reuse=tf.AUTO_REUSE)
+    
+    # 2-layer LSTM, each layer has n_hidden units.
+    # Average Accuracy= 95.20% at 50k iter
+    # cell = rnn.MultiRNNCell([rnn_cell.LSTMCell(n_hidden), rnn_cell.LSTMCell(n_hidden)])
+    
+    # generate prediction
+    outputs, states = rnn.static_rnn(cell, input_placeholder, dtype=tf.float32)
+    
+    # there are n_input outputs but
+    # we only want the last output
+    return _ 
+
+predictions = model(batchX_placeholder, W, b)
