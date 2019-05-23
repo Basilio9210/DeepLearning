@@ -93,3 +93,16 @@ def model(input_placeholder, weights, biases):
     return _ 
 
 predictions = model(batchX_placeholder, W, b)
+
+
+# Loss and optimizer
+total_loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(logits = _ , labels= _ ))
+optimizer = tf.train.RMSPropOptimizer(learning_rate=learning_rate).minimize(total_loss)
+
+# Model evaluation
+# Introduce the accuracy estimation based on predictions
+correct_predictions = tf.equal(tf.argmax( _ ,1), tf.argmax( _ ,1))
+accuracy = tf.reduce_mean(tf.cast(correct_predictions, tf.float32))
+
+# Initializing the variables
+init = tf.global_variables_initializer()
