@@ -39,3 +39,19 @@ def read_data(fname):
 
 training_data = read_data(data_path+training_file)
 print("Training data loaded...")
+
+
+
+# Define parameters
+learning_rate = 0.001
+n_input = 3
+num_epochs = 20000
+num_classes = 2
+echo_step = 500
+#echo_step = 1000
+batch_size = 5
+words_to_predict = 10
+
+
+# number of units in RNN cell
+n_hidden = 512
