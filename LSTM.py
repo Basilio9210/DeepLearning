@@ -55,3 +55,14 @@ words_to_predict = 10
 
 # number of units in RNN cell
 n_hidden = 512
+
+
+# --- Create placeholders
+batchX_placeholder = tf.placeholder(tf.float32, [None, _ , 1])
+batchY_placeholder = tf.placeholder(tf.float32, [None, vocab_size])
+
+init_state = tf.placeholder(tf.float32, [batch_size, vocab_size])
+
+# --- Weights, Bias initialization
+W = tf.Variable(np.random.rand( _ , vocab_size), dtype=tf.float32)
+b = tf.Variable(np.zeros((1, _ )), dtype=tf.float32)
