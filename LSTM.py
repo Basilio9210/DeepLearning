@@ -4,8 +4,6 @@ A prediction of a word after n_input words learned from text file.
 A story is automatically generated if some initial words are provided to
 feed the model as input. 
 '''
-
-
 from google.colab import drive
 #drive.mount("/content/data/")
 !ls data/'My Drive'/'Colab Notebooks'/'Datasets'/'LSTM_words'/
