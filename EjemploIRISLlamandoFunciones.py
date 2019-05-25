@@ -7,8 +7,6 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 import FuncionesEjemploIRIS as fk
 
-
-
 dataset = load_iris()
 
 #Se almacena array de datos en variable
@@ -35,8 +33,8 @@ ph1,ph2,w1,w2,w3,b1,b2,b3 = fk.definirVariables(n_input,n_hidden_1,n_hidden_2,n_
 matriz = fk.definirMatrizClases(Y_train,dataset.target_names)
 matriz_Test = fk.definirMatrizClases(Y_test,dataset.target_names)
 
-#ph1 = tf.placeholder(tf.float32,[None,4])
-#ph2 = tf.placeholder(tf.float32,[None,3])
+ph1 = tf.placeholder(tf.float32,[None,4])
+ph2 = tf.placeholder(tf.float32,[None,3])
 
 
 
