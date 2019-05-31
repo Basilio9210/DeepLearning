@@ -1,7 +1,7 @@
 
-import numpy as np # para operar vectores y matrices
-import wave        # Libreria para leer y esctribir archivos WAV
-import struct      # Libreria que estructura información dividida
+import numpy as np   # para operar vectores y matrices
+import wave          # Libreria para leer y esctribir archivos WAV
+import struct        # Libreria que estructura información dividida
 
 # =============================================================================
 # Sección de Lectura del archivo WAV
