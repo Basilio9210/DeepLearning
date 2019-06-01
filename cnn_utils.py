@@ -7,6 +7,9 @@ from tensorflow.python.framework import ops
 import pickle
 
 
+
+
+
 def load_dataset_cifar():
 
     for i in range (1,6):
